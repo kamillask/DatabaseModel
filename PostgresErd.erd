@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="PostgresErd">
+	<entities>
+		<data-source id="postgres-jdbc-182737022bf-4f3b8a87570cc611">
+			<entity id="1" name="category" fq-name="audit.category">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="2" name="costdeliverychargehistory" fq-name="audit.costdeliverychargehistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="3" name="costpartschargehistory" fq-name="audit.costpartschargehistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="4" name="costrepairchargehistory" fq-name="audit.costrepairchargehistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="5" name="country" fq-name="audit.country">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="6" name="dbsecurityuserauthorizationhistory" fq-name="audit.dbsecurityuserauthorizationhistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="7" name="humanresourcesdepartmenthistory" fq-name="audit.humanresourcesdepartmenthistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="8" name="humanresourcesstaffhistory" fq-name="audit.humanresourcesstaffhistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="9" name="salescustomerhistory" fq-name="audit.salescustomerhistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="10" name="salesordervehicledetailhistory" fq-name="audit.salesordervehicledetailhistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="11" name="salesordervehiclehistory" fq-name="audit.salesordervehiclehistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="12" name="vehiclemanufacturermodelhistory" fq-name="audit.vehiclemanufacturermodelhistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="13" name="vehiclemanufacturervehicleinventoryhistory" fq-name="audit.vehiclemanufacturervehicleinventoryhistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="14" name="vehiclemanufacturervehiclemakehistory" fq-name="audit.vehiclemanufacturervehiclemakehistory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="15" name="vw_finduniquetablepkvehiclemanufacturervehiclemake" fq-name="audit.vw_finduniquetablepkvehiclemanufacturervehiclemake">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="16" name="vw_finduniquetablepkycostdeliverycharge" fq-name="audit.vw_finduniquetablepkycostdeliverycharge">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="17" name="vw_finduniquetablepkycostpartscharge" fq-name="audit.vw_finduniquetablepkycostpartscharge">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="18" name="vw_finduniquetablepkycostrepaircharge" fq-name="audit.vw_finduniquetablepkycostrepaircharge">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="19" name="vw_finduniquetablepkydbsecurityuserauthorization" fq-name="audit.vw_finduniquetablepkydbsecurityuserauthorization">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="20" name="vw_finduniquetablepkygeographycountry" fq-name="audit.vw_finduniquetablepkygeographycountry">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="21" name="vw_finduniquetablepkyhumanresourcesdepartment" fq-name="audit.vw_finduniquetablepkyhumanresourcesdepartment">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="22" name="vw_finduniquetablepkyhumanresourcesstaff" fq-name="audit.vw_finduniquetablepkyhumanresourcesstaff">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="23" name="vw_finduniquetablepkymarketingcategory" fq-name="audit.vw_finduniquetablepkymarketingcategory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="24" name="vw_finduniquetablepkysalescustomer" fq-name="audit.vw_finduniquetablepkysalescustomer">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="25" name="vw_finduniquetablepkysalesordervehicle" fq-name="audit.vw_finduniquetablepkysalesordervehicle">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="26" name="vw_finduniquetablepkysalesordervehicledetail" fq-name="audit.vw_finduniquetablepkysalesordervehicledetail">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="27" name="vw_finduniquetablepkyvehiclemanufacturermodel" fq-name="audit.vw_finduniquetablepkyvehiclemanufacturermodel">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="28" name="vw_finduniquetablepkyvehiclemanufacturervehicleinventory" fq-name="audit.vw_finduniquetablepkyvehiclemanufacturervehicleinventory">
+				<path name="audit"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="29" name="deliverycharge" fq-name="&quot;cost&quot;.deliverycharge">
+				<path name="cost"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="30" name="partscharge" fq-name="&quot;cost&quot;.partscharge">
+				<path name="cost"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="31" name="repaircharge" fq-name="&quot;cost&quot;.repaircharge">
+				<path name="cost"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="32" name="uvw_deliverycharge" fq-name="&quot;cost&quot;.uvw_deliverycharge">
+				<path name="cost"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="33" name="uvw_partscharge" fq-name="&quot;cost&quot;.uvw_partscharge">
+				<path name="cost"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="34" name="uvw_repaircharge" fq-name="&quot;cost&quot;.uvw_repaircharge">
+				<path name="cost"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="35" name="userauthorization" fq-name="dbsecurity.userauthorization">
+				<path name="dbsecurity"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="36" name="uvw_userauthorization" fq-name="dbsecurity.uvw_userauthorization">
+				<path name="dbsecurity"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="37" name="country" fq-name="geography.country">
+				<path name="geography"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="38" name="uvw_country" fq-name="geography.uvw_country">
+				<path name="geography"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="39" name="department" fq-name="humanresources.department">
+				<path name="humanresources"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="40" name="staff" fq-name="humanresources.staff">
+				<path name="humanresources"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="41" name="uvw_department" fq-name="humanresources.uvw_department">
+				<path name="humanresources"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="42" name="uvw_staff" fq-name="humanresources.uvw_staff">
+				<path name="humanresources"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="43" name="category" fq-name="marketing.category">
+				<path name="marketing"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="44" name="uvw_category" fq-name="marketing.uvw_category">
+				<path name="marketing"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="45" name="uvw_employeeinformation" fq-name="report.uvw_employeeinformation">
+				<path name="report"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="46" name="uvw_manufacturercountryandvehicle" fq-name="report.uvw_manufacturercountryandvehicle">
+				<path name="report"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="47" name="uvw_marketingcustomersales" fq-name="report.uvw_marketingcustomersales">
+				<path name="report"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="48" name="uvw_partscharges" fq-name="report.uvw_partscharges">
+				<path name="report"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="49" name="uvw_staffsoldcars" fq-name="report.uvw_staffsoldcars">
+				<path name="report"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="50" name="customer" fq-name="sales.customer">
+				<path name="sales"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="51" name="ordervehicle" fq-name="sales.ordervehicle">
+				<path name="sales"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="52" name="ordervehicledetail" fq-name="sales.ordervehicledetail">
+				<path name="sales"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="53" name="uvw_customer" fq-name="sales.uvw_customer">
+				<path name="sales"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="54" name="uvw_ordervehicle" fq-name="sales.uvw_ordervehicle">
+				<path name="sales"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="55" name="uvw_ordervehicledetail" fq-name="sales.uvw_ordervehicledetail">
+				<path name="sales"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="56" name="manufacturermodel" fq-name="vehicle.manufacturermodel">
+				<path name="vehicle"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="57" name="manufacturervehicleinventory" fq-name="vehicle.manufacturervehicleinventory">
+				<path name="vehicle"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="58" name="manufacturervehiclemake" fq-name="vehicle.manufacturervehiclemake">
+				<path name="vehicle"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="59" name="uvw_manufacturermodel" fq-name="vehicle.uvw_manufacturermodel">
+				<path name="vehicle"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="60" name="uvw_manufacturervehicleinventory" fq-name="vehicle.uvw_manufacturervehicleinventory">
+				<path name="vehicle"/>
+				<path name="PDataModel"/>
+			</entity>
+			<entity id="61" name="uvw_manufacturervehiclemake" fq-name="vehicle.uvw_manufacturervehiclemake">
+				<path name="vehicle"/>
+				<path name="PDataModel"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fk_deliverycharges_userauthorization" fq-name="&quot;cost&quot;.deliverycharge.fk_deliverycharges_userauthorization" type="fk" pk-ref="35" fk-ref="29"/>
+		<relation name="fk_partscharges_userauthorization" fq-name="&quot;cost&quot;.partscharge.fk_partscharges_userauthorization" type="fk" pk-ref="35" fk-ref="30"/>
+		<relation name="fk_repaircharges_userauthorization" fq-name="&quot;cost&quot;.repaircharge.fk_repaircharges_userauthorization" type="fk" pk-ref="35" fk-ref="31"/>
+		<relation name="fk_country_userauthorization" fq-name="geography.country.fk_country_userauthorization" type="fk" pk-ref="35" fk-ref="37"/>
+		<relation name="fk_department_userauthorization" fq-name="humanresources.department.fk_department_userauthorization" type="fk" pk-ref="35" fk-ref="39"/>
+		<relation name="fk_staff_userauthorization" fq-name="humanresources.staff.fk_staff_userauthorization" type="fk" pk-ref="35" fk-ref="40"/>
+		<relation name="fk_marketingcategory_userauthorization" fq-name="marketing.category.fk_marketingcategory_userauthorization" type="fk" pk-ref="35" fk-ref="43"/>
+		<relation name="fk_customer_userauthorization" fq-name="sales.customer.fk_customer_userauthorization" type="fk" pk-ref="35" fk-ref="50"/>
+		<relation name="fk_salesordervehicle_userauthorization" fq-name="sales.ordervehicle.fk_salesordervehicle_userauthorization" type="fk" pk-ref="35" fk-ref="51"/>
+		<relation name="fk_salesordervehicledetail_userauthorization" fq-name="sales.ordervehicledetail.fk_salesordervehicledetail_userauthorization" type="fk" pk-ref="35" fk-ref="52"/>
+		<relation name="fk_manufacturermodel_userauthorization" fq-name="vehicle.manufacturermodel.fk_manufacturermodel_userauthorization" type="fk" pk-ref="35" fk-ref="56"/>
+		<relation name="fk_manufacturervehicleineventory_userauthorization" fq-name="vehicle.manufacturervehicleinventory.fk_manufacturervehicleineventory_userauthorization" type="fk" pk-ref="35" fk-ref="57"/>
+		<relation name="fk_manufacturervehiclemake_userauthorization" fq-name="vehicle.manufacturervehiclemake.fk_manufacturervehiclemake_userauthorization" type="fk" pk-ref="35" fk-ref="58"/>
+		<relation name="fk_customer_country" fq-name="sales.customer.fk_customer_country" type="fk" pk-ref="37" fk-ref="50"/>
+		<relation name="fk_manufacturervehiclemake_country" fq-name="vehicle.manufacturervehiclemake.fk_manufacturervehiclemake_country" type="fk" pk-ref="37" fk-ref="58"/>
+		<relation name="fk_staff_department" fq-name="humanresources.staff.fk_staff_department" type="fk" pk-ref="39" fk-ref="40"/>
+		<relation name="fk_salesordervehicle_staff" fq-name="sales.ordervehicle.fk_salesordervehicle_staff" type="fk" pk-ref="40" fk-ref="51"/>
+		<relation name="fk_salesordervehicle_customer" fq-name="sales.ordervehicle.fk_salesordervehicle_customer" type="fk" pk-ref="50" fk-ref="51"/>
+		<relation name="fk_salesordervehicledetail_salesordervehicle" fq-name="sales.ordervehicledetail.fk_salesordervehicledetail_salesordervehicle" type="fk" pk-ref="51" fk-ref="52"/>
+		<relation name="fk_marketingcategory_manufacturermodel" fq-name="marketing.category.fk_marketingcategory_manufacturermodel" type="fk" pk-ref="56" fk-ref="43"/>
+		<relation name="fk_manufacturervehicleinventory_manufacturermodel" fq-name="vehicle.manufacturervehicleinventory.fk_manufacturervehicleinventory_manufacturermodel" type="fk" pk-ref="56" fk-ref="57"/>
+		<relation name="fk_deliverycharges_manufacturervehicleinventory" fq-name="&quot;cost&quot;.deliverycharge.fk_deliverycharges_manufacturervehicleinventory" type="fk" pk-ref="57" fk-ref="29"/>
+		<relation name="fk_partscharges_manufacturervehicleinventory" fq-name="&quot;cost&quot;.partscharge.fk_partscharges_manufacturervehicleinventory" type="fk" pk-ref="57" fk-ref="30"/>
+		<relation name="fk_repaircharges_manufacturervehicleinventory" fq-name="&quot;cost&quot;.repaircharge.fk_repaircharges_manufacturervehicleinventory" type="fk" pk-ref="57" fk-ref="31"/>
+		<relation name="fk_salesordervehicledetail_manufacturervehicleinventory" fq-name="sales.ordervehicledetail.fk_salesordervehicledetail_manufacturervehicleinventory" type="fk" pk-ref="57" fk-ref="52"/>
+		<relation name="fk_manufacturermodel_manufacturervehiclemake" fq-name="vehicle.manufacturermodel.fk_manufacturermodel_manufacturervehiclemake" type="fk" pk-ref="58" fk-ref="56"/>
+	</relations>
+</diagram>
