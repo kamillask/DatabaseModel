@@ -1,0 +1,103 @@
+-- INSERT statement for DBSecurity.UserAuthorization
+INSERT INTO DBSecurity.UserAuthorization
+(UserAuthorizationId, ClassTime, IndividualProject, GroupMemberLastName, GroupMemberFirstName, GroupName, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.UserAuthorizationSequenceId'), '09:15', 'IndividualProject', 'Doe', 'John', 'GroupName', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Geography.Country
+INSERT INTO Geography.Country
+(CountryId, ISO3, CountryName, ISO2, SalesRegion, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.CountrySequenceId'), 'USA', 'CountryName', 'US', 'SalesRegion', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Vehicle.ManufacturerVehicleMake
+INSERT INTO Vehicle.ManufacturerVehicleMake
+(ManufacturerVehicleMakeId, MakeName, CountryId, Type, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.ManufacturerVehicleMakeSequenceId'), 'MakeName', 1, 'Type', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Vehicle.ManufacturerModel
+INSERT INTO Vehicle.ManufacturerModel
+(ManufacturerModelId, ManufacturerVehicleMakeId, ModelName, Variant, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.ManufacturerModelSequenceId'), 1, 'ModelName', 'Variant', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Vehicle.ManufacturerVehicleInventory
+INSERT INTO Vehicle.ManufacturerVehicleInventory
+(ManufacturerVehicleInventoryId, StockCode, ManufacturerModelId, PurchaseCost, IsPremiumRoadHandlingPackage, VehicleColor, ManufacturerComments, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.ManufacturerVehicleInventorySequenceId'), 1, 1, 10000000.00, FALSE, 'VehicleColor', 'ManufacturerComments', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for HumanResources.Department
+INSERT INTO HumanResources.Department
+(DepartmentId, DepartmentName, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.DepartmentSequenceId'), 'DepartmentName', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Sales.Customer
+INSERT INTO Sales.Customer
+(CustomerId, FirstName, LastName, Address1, Address2, City, PostalCode, IsReseller, IsCreditRisk, CountryId, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.CustomerSequenceId'), 'FirstName', 'LastName', 'Address1', 'Address2', 'City', 'PostalCode', FALSE, FALSE, 1, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Marketing.Category
+INSERT INTO Marketing.Category
+(CategoryId, ManufacturerModelId, MarketingType, CampaignName, Country, ManufacturerSpendCapacity, LowerThresholdValue, UpperThresholdValue, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.MarketingCategorySequenceId'), 1, 'MarketingType', 'CampaignName', 'Country', 10000.0, 100000, 10000000, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Cost.DeliveryCharge
+INSERT INTO Cost.DeliveryCharge
+(DeliveryChargeId, ManufacturerVehicleInventoryId, PackingSymbol, ChargeAmount, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.DeliveryChargeSequenceId'), 1, 'PackingSymbol', 0.00, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Cost.PartsCharge
+INSERT INTO Cost.PartsCharge
+(PartsChargeId, ManufacturerVehicleInventoryId, PartType, ChargeAmount, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.PartsChargeSequenceId'), 1, 'PartType', 0.00, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for HumanResources.Staff
+INSERT INTO HumanResources.Staff
+(StaffId, FirstName, LastName, ManagerID, DepartmentId, Address, City, PostalCode, Country, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.StaffSequenceId'), 'FirstName', 'LastName', 1, 1, 'Address', 'City', 'PostalCode', 'Country', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Sales.OrderVehicle
+INSERT INTO Sales.OrderVehicle
+(OrderVehicleId, CustomerId, InvoiceNumber, SaleDate, StaffId, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.SalesOrderVehicleSequenceId'), 1, 1, CURRENT_TIMESTAMP, 1, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- INSERT statement for Sales.OrderVehicleDetail
+INSERT INTO Sales.OrderVehicleDetail
+(OrderVehicleDetailId, SalesOrderVehicleId, ManufacturerVehicleInventoryId, SalePrice, Discount, UserAuthorizationId, SysStartTime, SysEndTime)
+VALUES
+(nextval('sdnumber.SalesOrderVehicleDetailSequenceId'), 1, 1, 0.00, 0.00, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+
+-- view data
+select * from DBSecurity.UserAuthorization
+
+-- delete some data, show audit user auth history table
+delete from DBSecurity.UserAuthorization
+where userauthorizationid = 18;
+
+-- update some data, show current table and history table
+UPDATE dbsecurity.userauthorization
+    SET groupname = 'Group1',
+        fireaudittrigger = 'Y'
+    WHERE userauthorizationid = 10; -- Update condition as per your requirement
+
+UPDATE dbsecurity.userauthorization
+    SET groupname = 'Group2',
+        fireaudittrigger = 'Y'
+    WHERE userauthorizationid = 11; -- Update condition as per your requirement
+
+UPDATE dbsecurity.userauthorization
+    SET groupname = 'Group3',
+        fireaudittrigger = 'Y'
+    WHERE userauthorizationid = 12; -- Update condition as per your requirement
+
+
